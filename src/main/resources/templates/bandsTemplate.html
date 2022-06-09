@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Alt Bands</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 id="header_logo">90's Grunge Enthusiast</h1>
+        <nav class="header_nav">
+            <ul class="header_nav_list">
+                <li class="header_nav_listItem"><a href=""></a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="profile">
+        <figure>
+            <img src="https://th.bing.com/th?q=Seattle+Grunge+Live+Vinyl&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-US&cc=US&setlang=en&adlt=moderate&t=1&mw=247" alt="profile_pic" class="profile_image">
+        </figure>
+        <article class="profile_heading">
+            <h2>Everyone knows the 90's were the revival of Rock</h2>
+            <p>The disco sounds of the 70's and the synthesized sounds of the 80's nearly destroyed all of the things about rock and roll that made it great.  </p>
+        </article>
+    </section>
+    <h2 class="bands_title">Seattle Grunge Bands</h2>
+    <section class="bands">
+        <article class="bands_column">
+            <h3 class="bands_column_title">Band Names</h3>
+            <ul th:each="band: ${bandsModel}">
+                <a th:href="${band.bandUrl}"><li th:text="${band.bandName}"></li></a>
+            </ul>
+        </article>
+        <article class="bands_column">
+            <h3 class="bands_column_title">Grunge Relevance</h3>
+            <ul>
+                <li th:each="band: ${bandsModel}" th:text="${band.category}"></li>
+            </ul>
+        </article>
+        <article class="bands_column">
+            <h3 class="bands_column_web">Check 'em out!</h3>
+            <ul>
+                <li th:each="band: ${bandsModel}" th:text="${band.bandUrl}"></li>
+            </ul>
+        </article>
+    </section>
+</div>
+</body>
+</html>
