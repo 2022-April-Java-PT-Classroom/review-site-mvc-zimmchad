@@ -17,16 +17,16 @@ public class BandRepository {
     Band bandC = new Band(3L,"Soundgarden", "HOF", "https://soundgardenworld.com");
     Band bandD = new Band(4L,"Screaming Trees", "One Hit Wonders", "https://en.wikipedia.org/wiki/Screaming_Trees_discography");
     Band bandE = new Band(5L,"Dinosaur Jr.", "One Hit Wonders", "https://dinosaurjr.com");
-    Band bandF = new Band(6L,"Mother Love Bone", "Founding Fathers", "https://www.allmusic.com/artist/mother-love-bone/");
+    Band bandF = new Band(6L,"Mother Love Bone", "Founding Fathers", "https://en.wikipedia.org/wiki/Mother_Love_Bone");
     Band bandG = new Band(7L,"Mudhoney", "Founding Fathers", "https://mudhoneyonline.com");
     Band bandH = new Band(8L,"Love Battery", "How were they not famous?", "https://www.eskimo.com/~tracyr/LoveBat.html");
-    Band bandI = new Band(9L,"The Gits", "How were they not famous", "www.thegits.com");
+    Band bandI = new Band(9L,"The Gits", "How were they not famous", "https://en.wikipedia.org/wiki/The_Gits");
     Band bandJ = new Band(10L,"L7", "One Hit Wonders","https://www.facebook.com/L7theband");
     Band bandK = new Band(11L,"Alice in Chains", "HOF", "https://tour.aliceinchains.com");
     Band bandL = new Band(12L,"Hammerbox", "Underground", "https://hammerbox.bandcamp.com");
     Band bandM = new Band(13L,"Supersuckers", "Underground", "https://supersuckers.com");
     Band bandN = new Band(14L,"Seaweed", "Underground", "https://seaweed.bandcamp.com");
-    Band bandO = new Band(15L,"Skin Yard", "Underground", "https://skin-yard.com");
+    Band bandO = new Band(15L,"Skin Yard", "Underground", "https://en.wikipedia.org/wiki/Skin_Yard");
 
     public BandRepository(){
         bandList.put(bandA.getId(), bandA);

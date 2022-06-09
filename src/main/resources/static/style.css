@@ -1,12 +1,16 @@
 body{
-background-color: grey;
+background-color: #FF8C00;
 font: 18px/1.618 sans-serif;
 font-family: 'Lato', sans-serif;
 }
 
+.profile{
+text-align: center;
+}
+
 h1{
 text-align: center;
-color: beige;
+color: #8B0000;
 }
 
 .header{
@@ -30,4 +34,8 @@ text-align: center;
 .bands{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
+}
+
+ul{
+color: #8B0000
 }
