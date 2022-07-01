@@ -55,4 +55,7 @@ public class BandRepository {
         return bandList.values();
     }
 
+    public Collection<Band> findSingleBand(String bandName) { return bandList.values(); }
+
+
 }
